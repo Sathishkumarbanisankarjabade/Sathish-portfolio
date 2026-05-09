@@ -225,10 +225,7 @@ export default function Home() {
   </div>
 </motion.section>
 
-{/* Divider */}
-<div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-  <div className="h-px w-full bg-slate-200" />
-</div>
+
 
       {/* Divider */}
       <div className="mx-auto my-10 max-w-6xl px-4 sm:px-6 lg:px-8">
