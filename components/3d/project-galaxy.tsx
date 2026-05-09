@@ -12,50 +12,54 @@ import { Card, CardContent } from "@/components/ui/card"
 const projectsData = [
   {
     id: 1,
-    name: "AI Chat Platform",
-    category: "ai",
+    name: "AI-Driven Search & Rescue with TurtleBot3",
+    category: "robotics",
     position: [2, 1, 0],
     color: "#00ffff",
-    description: "Real-time AI-powered chat application with natural language processing.",
-    technologies: ["React", "Node.js", "OpenAI", "WebSocket"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    description:
+      "Built an end-to-end Search & Rescue robotics pipeline for autonomous exploration, mapping, collision avoidance, and QR victim detection.",
+    technologies: ["ROS 2 Humble", "TurtleBot3", "Gazebo", "SLAM", "Nav2", "YOLOv8", "Python"],
+    github: "https://github.com/Banisankar",
+    profile: "https://www.linkedin.com/in/sathish-kumar-bani-sankar-jabade-b32a6a1a0/",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 2,
-    name: "E-commerce Platform",
-    category: "frontend",
+    name: "Vehicle Speed Estimation on Highway",
+    category: "vision",
     position: [-2, -1, 1],
-    color: "#ff00ff",
-    description: "Modern e-commerce platform with advanced filtering and payment integration.",
-    technologies: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    color: "#ff7f50",
+    description:
+      "Developed a computer vision pipeline to estimate vehicle speed from highway video using Lucas–Kanade optical flow and motion tracking.",
+    technologies: ["Python", "OpenCV", "Lucas–Kanade Optical Flow", "Computer Vision"],
+    github: "https://github.com/Banisankar",
+    profile: "https://www.linkedin.com/in/sathish-kumar-bani-sankar-jabade-b32a6a1a0/",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 3,
-    name: "API Gateway",
-    category: "backend",
+    name: "Solar Powered Mini Electric Tiller",
+    category: "engineering",
     position: [0, 2, -2],
-    color: "#ffff00",
-    description: "Scalable API gateway with rate limiting, authentication, and monitoring.",
-    technologies: ["Node.js", "Redis", "Docker", "AWS"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    color: "#ffd700",
+    description:
+      "Designed and developed a cost-effective mini electric tiller using solar energy and battery storage to reduce manual agricultural labor.",
+    technologies: ["Mechanical Design", "Solar Energy", "Battery Storage", "Fabrication"],
+    github: "https://github.com/Banisankar",
+    profile: "https://www.linkedin.com/in/sathish-kumar-bani-sankar-jabade-b32a6a1a0/",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 4,
-    name: "Open Source UI Library",
-    category: "opensource",
+    name: "Compact Foldable Electric Bicycle",
+    category: "simulation",
     position: [-1, 0, 2],
-    color: "#00ff00",
-    description: "Comprehensive React component library with TypeScript support.",
-    technologies: ["React", "TypeScript", "Storybook", "Rollup"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    color: "#7fffd4",
+    description:
+      "Designed and fabricated a compact foldable electric bicycle for urban commuters with a focus on portability and sustainable mobility.",
+    technologies: ["Mechanical Design", "CAD", "Fabrication", "Sustainable Mobility"],
+    github: "https://github.com/Banisankar",
+    profile: "https://www.linkedin.com/in/sathish-kumar-bani-sankar-jabade-b32a6a1a0/",
     image: "/placeholder.svg?height=200&width=300",
   },
 ]
@@ -253,9 +257,9 @@ export default function ProjectGalaxy({ selectedFilter }: ProjectGalaxyProps) {
                       className="glass-morphism border-purple-400 text-purple-400 hover:bg-purple-400/20 bg-transparent"
                       asChild
                     >
-                      <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer">
+                      <a href={selectedProject.profile} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                        LinkedIn
                       </a>
                     </Button>
                   </div>

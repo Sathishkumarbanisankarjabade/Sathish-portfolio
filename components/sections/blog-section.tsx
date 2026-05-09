@@ -6,56 +6,47 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ExternalLink } from "lucide-react"
 
-const blogPosts = [
+const publications = [
   {
     id: 1,
-    title: "The Future of Web Development: WebAssembly and Beyond",
+    title: "Fabrication of Solar Powered Mini Electric Tiller",
     excerpt:
-      "Exploring how WebAssembly is revolutionizing web performance and opening new possibilities for web applications.",
-    date: "2024-01-15",
-    readTime: "8 min read",
-    tags: ["WebAssembly", "Performance", "Future Tech"],
+      "International Journal of Advances in Engineering and Management, Volume 6, Issue 8, August 2024.",
+    date: "2024-08-01",
+    readTime: "Published",
+    tags: ["Solar Energy", "Fabrication", "Mechanical Design"],
     image: "/placeholder.svg?height=200&width=400",
   },
   {
     id: 2,
-    title: "Building Immersive 3D Experiences with Three.js",
+    title: "Design, Analyse and Fabrication of Compact Foldable Electric Bicycle",
     excerpt:
-      "A comprehensive guide to creating stunning 3D web experiences using Three.js and modern web technologies.",
-    date: "2024-01-10",
-    readTime: "12 min read",
-    tags: ["Three.js", "3D", "WebGL"],
-    image: "/placeholder.svg?height=200&width=400",
-  },
-  {
-    id: 3,
-    title: "AI-Powered Development: Tools That Are Changing the Game",
-    excerpt: "How artificial intelligence is transforming the development workflow and what it means for developers.",
-    date: "2024-01-05",
-    readTime: "6 min read",
-    tags: ["AI", "Development", "Tools"],
+      "International Journal of Advances in Engineering and Management, Volume 6, Issue 8, August 2024.",
+    date: "2024-08-01",
+    readTime: "Published",
+    tags: ["Sustainable Mobility", "CAD", "Fabrication"],
     image: "/placeholder.svg?height=200&width=400",
   },
 ]
 
-const openSourceProjects = [
+const researchHighlights = [
   {
-    name: "react-3d-carousel",
-    description: "A performant 3D carousel component for React applications",
-    stars: 234,
-    language: "TypeScript",
+    name: "ROS 2 Search & Rescue Pipeline",
+    description:
+      "Integrated TurtleBot3 perception, SLAM, Nav2, and YOLOv8 QR detection into an autonomous rescue workflow.",
+    domain: "Robotics",
   },
   {
-    name: "webgl-particle-system",
-    description: "High-performance particle system using WebGL",
-    stars: 156,
-    language: "JavaScript",
+    name: "Vehicle Speed Estimation",
+    description:
+      "Developed a computer vision pipeline using Lucas–Kanade optical flow for speed estimation from highway video.",
+    domain: "Computer Vision",
   },
   {
-    name: "ai-code-assistant",
-    description: "VS Code extension for AI-powered code completion",
-    stars: 89,
-    language: "TypeScript",
+    name: "Sustainable Mobility Design",
+    description:
+      "Designed and fabricated a compact foldable electric bicycle and a solar-powered mini electric tiller.",
+    domain: "Engineering",
   },
 ]
 
@@ -69,19 +60,19 @@ export default function BlogSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 liquid-gradient font-sora">Blog & Open Source</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 liquid-gradient font-sora">Publications & Research</h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Sharing knowledge through articles and contributing to the open source community.
+            Selected publications and research highlights from robotics, computer vision, and sustainable engineering work.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Blog Posts */}
+          {/* Publications */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">📝 Latest Articles</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">📚 Publications</h3>
 
             <div className="space-y-6">
-              {blogPosts.map((post, index) => (
+              {publications.map((post, index) => (
                 <motion.div
                   key={post.id}
                   initial={{ opacity: 0, y: 30 }}
@@ -126,10 +117,13 @@ export default function BlogSection() {
                           <Button
                             variant="outline"
                             size="sm"
+                            asChild
                             className="glass-morphism border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent"
                           >
-                            Read More
-                            <ExternalLink className="ml-2 h-4 w-4" />
+                            <a href="https://github.com/Banisankar" target="_blank" rel="noopener noreferrer">
+                              View GitHub
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </a>
                           </Button>
                         </div>
                       </div>
@@ -140,14 +134,14 @@ export default function BlogSection() {
             </div>
           </div>
 
-          {/* Open Source Projects */}
+          {/* Research Highlights */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">🔓 Open Source Contributions</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">🔍 Research Highlights</h3>
 
             <div className="space-y-4 mb-8">
-              {openSourceProjects.map((project, index) => (
+              {researchHighlights.map((highlight, index) => (
                 <motion.div
-                  key={project.name}
+                  key={highlight.name}
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
@@ -155,18 +149,25 @@ export default function BlogSection() {
                   <Card className="glass-morphism border-white/20 hover:border-purple-400/50 transition-all duration-300">
                     <CardContent className="p-4">
                       <div className="flex items-start justify-between mb-2">
-                        <h4 className="text-lg font-bold text-white">{project.name}</h4>
-                        <div className="flex items-center gap-1 text-yellow-400">⭐ {project.stars}</div>
+                        <h4 className="text-lg font-bold text-white">{highlight.name}</h4>
+                        <span className="text-white/60 text-sm">{highlight.domain}</span>
                       </div>
 
-                      <p className="text-white/70 mb-3">{project.description}</p>
+                      <p className="text-white/70 mb-3">{highlight.description}</p>
 
                       <div className="flex items-center justify-between">
                         <Badge variant="secondary" className="bg-white/10 text-white">
-                          {project.language}
+                          {highlight.domain}
                         </Badge>
-                        <Button variant="ghost" size="sm" className="text-purple-400 hover:text-purple-300">
-                          View on GitHub
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          asChild
+                          className="text-purple-400 hover:text-purple-300"
+                        >
+                          <a href="https://github.com/Banisankar" target="_blank" rel="noopener noreferrer">
+                            View GitHub
+                          </a>
                         </Button>
                       </div>
                     </CardContent>
@@ -175,7 +176,7 @@ export default function BlogSection() {
               ))}
             </div>
 
-            {/* GitHub Contribution Heatmap */}
+            {/* GitHub Activity Note */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -183,26 +184,26 @@ export default function BlogSection() {
             >
               <Card className="glass-morphism border-white/20">
                 <CardHeader>
-                  <CardTitle className="text-white flex items-center gap-2">📊 Contribution Activity</CardTitle>
+                  <CardTitle className="text-white flex items-center gap-2">📊 GitHub Research Activity</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-12 gap-1">
-                    {Array.from({ length: 365 }).map((_, i) => (
+                    {Array.from({ length: 72 }).map((_, i) => (
                       <div
                         key={i}
                         className={`w-3 h-3 rounded-sm ${
-                          Math.random() > 0.7
+                          i % 5 === 0
                             ? "bg-green-400"
-                            : Math.random() > 0.5
-                              ? "bg-green-400/60"
-                              : Math.random() > 0.3
-                                ? "bg-green-400/30"
-                                : "bg-white/10"
+                            : i % 3 === 0
+                            ? "bg-green-400/60"
+                            : "bg-white/10"
                         }`}
                       />
                     ))}
                   </div>
-                  <p className="text-white/60 text-sm mt-4">1,247 contributions in the last year</p>
+                  <p className="text-white/60 text-sm mt-4">
+                    Explore my GitHub for robotics code, perception implementations, and ongoing research work.
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>

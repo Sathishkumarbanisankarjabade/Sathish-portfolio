@@ -16,8 +16,19 @@ export default function AboutSection() {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6 liquid-gradient font-sora">About Me</h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            I'm a creative technologist who bridges the gap between design and development, crafting digital experiences
-            that push the boundaries of what's possible on the web.
+            I am a Master's student in Intelligent Robotics at Deggendorf Institute of Technology in Germany, with a
+            Mechanical Engineering background and hands-on experience in robotics perception, computer vision, ROS 2,
+            Gazebo simulation, and Python-based development.
+          </p>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mt-4">
+            I have developed robotics perception pipelines on Linux, including a YOLOv8-based QR victim-detection module
+            for an AI-driven Search & Rescue TurtleBot3 system using ROS 2, Gazebo, SLAM, Nav2, and TurtleBot3.
+            My work is focused on reliable perception integration, confidence-based detection, evidence logging, and
+            map-frame victim reporting.
+          </p>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mt-4">
+            I am currently strengthening my Python and C++ skills for robotics software development, with interests in
+            autonomous navigation, SLAM, mobile robots, simulation, and AI-based perception systems.
           </p>
         </motion.div>
 
