@@ -1466,11 +1466,16 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
-                <p className="text-sm font-semibold text-slate-900 mb-3">Email</p>
-                <a href="mailto:jabadesbanisankar@gmail.com" className="text-sky-600 font-semibold hover:text-sky-700 transition">
-                  jabadesbanisankar@gmail.com
-                </a>
-              </div>
+            <p className="text-sm font-semibold text-slate-900 mb-3">Email</p>
+        <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=jabadesbanisankar@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sky-600 font-semibold hover:text-sky-700 transition"
+  >
+    jabadesbanisankar@gmail.com
+  </a>
+</div>
               <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
                 <p className="text-sm font-semibold text-slate-900 mb-3">Location</p>
                 <p className="text-slate-700">Cham, Germany</p>
@@ -1661,16 +1666,31 @@ export default function Home() {
 }
 
 function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
 
   const handleChange = (field: keyof typeof formData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
   const handleSend = () => {
-    const subject = formData.subject || 'Portfolio inquiry'
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
-    window.location.href = `mailto:jabadesbanisankar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    const subject = formData.subject || "Portfolio inquiry"
+
+    const body = `Name: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}`
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jabadesbanisankar@gmail.com&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`
+
+    window.open(gmailUrl, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -1681,41 +1701,45 @@ function ContactForm() {
           <input
             type="text"
             value={formData.name}
-            onChange={(event) => handleChange('name', event.target.value)}
+            onChange={(event) => handleChange("name", event.target.value)}
             placeholder="Your name"
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
           />
         </div>
+
         <div>
           <label className="text-sm font-semibold text-slate-900">Email</label>
           <input
             type="email"
             value={formData.email}
-            onChange={(event) => handleChange('email', event.target.value)}
+            onChange={(event) => handleChange("email", event.target.value)}
             placeholder="Your email"
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
           />
         </div>
+
         <div>
           <label className="text-sm font-semibold text-slate-900">Subject</label>
           <input
             type="text"
             value={formData.subject}
-            onChange={(event) => handleChange('subject', event.target.value)}
+            onChange={(event) => handleChange("subject", event.target.value)}
             placeholder="Subject"
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
           />
         </div>
+
         <div>
           <label className="text-sm font-semibold text-slate-900">Message</label>
           <textarea
             value={formData.message}
-            onChange={(event) => handleChange('message', event.target.value)}
+            onChange={(event) => handleChange("message", event.target.value)}
             placeholder="Your message"
             rows={5}
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
           />
         </div>
+
         <button
           type="button"
           onClick={handleSend}
