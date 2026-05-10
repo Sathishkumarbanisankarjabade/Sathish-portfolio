@@ -101,7 +101,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <p className="mb-4 inline-flex rounded-full border border-sky-200 bg-white px-4 py-1.5 text-sm font-semibold text-sky-700 shadow-sm">
           Robotics Software · ROS 2 · Computer Vision
@@ -150,7 +150,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.96 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="relative">
           <div className="absolute -inset-6 -z-10 rounded-full bg-sky-100/70 blur-3xl" />
@@ -172,7 +172,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
@@ -190,7 +190,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-orange-300/30 blur-2xl" />
         <div className="absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-slate-300/40 blur-2xl" />
@@ -239,7 +239,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -258,7 +258,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -361,7 +361,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -462,7 +462,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -557,7 +557,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -660,7 +660,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -679,7 +679,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -743,7 +743,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -817,7 +817,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -836,7 +836,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -900,7 +900,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -967,7 +967,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -1043,7 +1043,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -1051,7 +1051,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
         className="text-4xl font-extrabold tracking-tight sm:text-5xl"
       >
         <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -1059,7 +1059,7 @@ export default function Home() {
             initial={{ scale: 0.8, opacity: 0, rotate: -4 }}
             whileInView={{ scale: 1, opacity: 1, rotate: 0 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.2 }}
             className="inline-block text-6xl font-black leading-none sm:text-7xl"
           >
             T
@@ -1081,7 +1081,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mb-6 flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sky-100 text-sky-700">
@@ -1117,7 +1117,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mb-6 flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
@@ -1156,7 +1156,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mb-6 flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-100 text-violet-700">
@@ -1195,7 +1195,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mb-6 flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
@@ -1233,7 +1233,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mb-6 flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-100 text-rose-700">
@@ -1281,7 +1281,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -1300,7 +1300,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -1367,7 +1367,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="flex items-center gap-4 md:w-24 md:flex-col">
@@ -1444,7 +1444,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
@@ -1463,7 +1463,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
             >
               <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-sm font-semibold text-slate-900 mb-3">Email</p>
@@ -1487,7 +1487,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
             >
               <ContactForm />
             </motion.div>
@@ -1507,7 +1507,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.2 }}
 >
   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="mb-12">
@@ -1529,7 +1529,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="absolute right-[-30px] top-[-30px] h-28 w-28 rounded-full bg-white/10" />
 
@@ -1559,7 +1559,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="absolute right-[-30px] top-[-30px] h-28 w-28 rounded-full bg-white/15" />
 
@@ -1589,7 +1589,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="absolute right-[-30px] top-[-30px] h-28 w-28 rounded-full bg-white/15" />
 
@@ -1618,7 +1618,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="absolute right-[-30px] top-[-30px] h-28 w-28 rounded-full bg-white/10" />
 
